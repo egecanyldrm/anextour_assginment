@@ -1,0 +1,218 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  background: #ecfaff;
+  color: #585858;
+
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 135%;
+  a {
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+  }
+  .dropdown-menu {
+    background: #ecfaff;
+  }
+  .navbar-brand {
+    :hover {
+      cursor: pointer;
+    }
+  }
+}
+
+/* Home Page  */
+
+.introduction {
+  justify-content: center;
+  margin: 10rem auto;
+  .image {
+    position: relative;
+    width: 570px;
+    height: 350px;
+  }
+  .title {
+    font-weight: 400;
+    font-size: 3.75rem;
+    line-height: 100%;
+  }
+  .subtitle {
+    color: #c38976;
+    font-weight: 300;
+    font-size: 1.563rem;
+    line-height: 110%;
+    padding-bottom: 1rem;
+  }
+}
+
+.offersection {
+  .offer_image {
+    position: relative;
+    .offer_button {
+      position: absolute;
+      top: 10%;
+      right: 0;
+      background-color: #e7a954;
+      padding: 1rem 5rem 1rem 2rem;
+      h4 {
+        font-weight: 300;
+        font-size: 2.1rem;
+        text-transform: uppercase;
+      }
+      h6 {
+        font-weight: 300;
+        font-size: 1.3rem;
+        line-height: 110%;
+        color: #ffffff;
+      }
+      .arrow_right {
+        width: 5rem;
+        height: 5rem;
+      }
+    }
+  }
+  .offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+
+    .title {
+      font-weight: 300;
+      font-size: 3.75rem;
+      line-height: 100%;
+    }
+    .subtitle {
+      color: #c38976;
+      font-weight: 300;
+      font-size: 1.563rem;
+      line-height: 110%;
+      margin: 1.3rem 0rem;
+    }
+    .content {
+      text-align: center;
+      font-weight: 300;
+      font-size: 1.063rem;
+      line-height: 160%;
+    }
+  }
+}
+
+.hotels {
+  margin-top: 6rem;
+  background-image: linear-gradient(180deg, transparent 40%, #def6ff 40%);
+  .hotels-logo {
+    padding-top: 1rem;
+  }
+  .hotelcard {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    max-width: 180px !important;
+
+    h2 {
+      font-weight: 500;
+      font-size: 0.875rem;
+      line-height: 125%;
+      color: #074a81;
+    }
+
+    .image {
+      position: relative;
+      width: 180px;
+      height: 220px;
+    }
+    .button {
+      position: relative;
+      right: 10%;
+      top: -20px;
+      padding: 10px;
+      border-radius: 50%;
+      background-color: #000000;
+    }
+  }
+  .footer {
+    .upper {
+      display: flex;
+      flex-wrap: wrap;
+      border-bottom: #0d0d2d 1px solid;
+      padding-bottom: 2rem;
+      .col-3 {
+        width: 20% !important;
+      }
+
+      .links {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 0.875rem;
+        line-height: 205%;
+      }
+    }
+    .lower {
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 0.875rem;
+      line-height: 205%;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .footer-copyright {
+      text-align: center;
+      margin-top: 2rem;
+    }
+  }
+}
+@include media-breakpoint-down(xl) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
+@include media-breakpoint-down(lg) {
+  html,
+  body {
+    font-size: 13px;
+  }
+  .hotels {
+    .hotels-logo {
+      margin-bottom: 3rem;
+    }
+  }
+}
+@include media-breakpoint-down(md) {
+  .offer_image {
+    .offer_button {
+      top: 50% !important;
+    }
+    h4 {
+      font-size: 1.8rem !important;
+    }
+    .arrow_right {
+      width: 4rem !important;
+      height: 4rem !important;
+    }
+  }
+}
+@include media-breakpoint-down(sm) {
+  html,
+  body {
+    font-size: 12px;
+  }
+}
