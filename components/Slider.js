@@ -6,25 +6,31 @@ import SliderImg from '../public/images/Home_slider.png'
 
 const Slider = () => {
     return (
-        <div>
-            <Carousel>
-                <Carousel.Item>
+        <Carousel>
+            <Carousel.Item >
+                <div className='carousel_img' >
                     <Image
                         src={SliderImg}
-                        layout='responsive'
+                        layout='fill'
+                        objectFit='cover'
                         priority
                     />
-                </Carousel.Item>
-                <Carousel.Item>
+                </div>
+            </Carousel.Item>
+            <Carousel.Item >
+                <div className='carousel_img' >
                     <Image
                         src={SliderImg}
-                        layout='responsive'
+                        layout='fill'
+                        objectFit='cover'
                         priority
-                    />
-                </Carousel.Item>
-            </Carousel>
 
-        </div>)
+                    />
+                </div>
+            </Carousel.Item>
+        </Carousel>
+
+    )
 }
 
 export default Slider

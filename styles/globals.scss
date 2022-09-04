@@ -39,6 +39,12 @@ body {
 
 /* Home Page  */
 
+.carousel_img {
+  position: relative;
+  height: 60vh;
+  width: 100%;
+}
+
 .introduction {
   justify-content: center;
   margin: 10rem auto;
@@ -64,6 +70,8 @@ body {
 .offersection {
   .offer_image {
     position: relative;
+    height: 60vh;
+    width: 100%;
     .offer_button {
       position: absolute;
       top: 10%;
@@ -198,6 +206,7 @@ body {
 }
 @include media-breakpoint-down(md) {
   .offer_image {
+    height: 30vh !important;
     .offer_button {
       top: 50% !important;
     }

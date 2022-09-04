@@ -18,7 +18,8 @@ const OfferSection = (props) => {
             <div className='offer_image' >
                 <Image
                     src={OfferImage}
-                    layout='responsive'
+                    layout='fill'
+                    objectFit='cover'
                     priority
                 />
                 <div className='offer_button d-flex justify-content-between'>
